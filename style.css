@@ -6,7 +6,6 @@
     --accent-color: #d49466
 }
 
-
 body {
     margin: 0;
     font-family: "Noto Sans KR", sans-serif;
@@ -21,25 +20,24 @@ a {
     position: sticky;
     top: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #16A58B;
+    background-color: #4C029A;
     padding: 8px 12px;
 }
 
 .navbar_logo {
-    font-size: 24px;
-    color: #fff;
-}
-
-.navbar_logo i {
-    color: #d49466;
+    display: flex;
+    padding-left: 20px;
+    font-size: 28px;
+    vertical-align: middle;
 }
 
 .navbar_menu {
     display: flex;
     list-style: none;
     padding-left: 0;
+    font-size: 20px;
 }
 
 .navbar_menu li {
@@ -75,11 +73,33 @@ a {
     width: 100%;
     height: 718px;
 }
+
+.contents_header {
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    background: red;
+}
+
+.about_contents  {
+    margin-left: 100px;
+    flex: 2;
+    background: blue;
+}
+
+.about_image {
+    margin-right: 100px;
+    flex: 1;
+    background: green;
+}
   
   footer {
     display: flex;
+    align-items: center;
     padding: 30px;
-    background: #138F99;
+    background-color: #4C029A;
   }
   
   footer > div:first-child {
