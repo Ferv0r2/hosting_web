@@ -9,21 +9,39 @@
 body {
     margin: auto;
     font-family: "Noto Sans KR", sans-serif;
+    background-color: #000;
 }
 
-a {
+h1 {
+    font-size:42px;
+}
+
+h2 {
+    font-size:24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+a, h1, h2, h3, h4 {
     text-decoration: none;
     color: var(--text-color);
 }
 
-.navbar {
+.nav_bg {
     position: sticky;
     top: 0px;
+    background-color: #4C029A;
+    padding: 8px 12px;
+}
+
+.navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #4C029A;
-    padding: 8px 12px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .navbar_logo {
@@ -51,7 +69,7 @@ a {
 
 .navbar_icons {
     list-style: none;
-    color: #fff;
+    color: var(--text-color);
     display: flex;
     padding-left: 0;
 }
@@ -73,6 +91,8 @@ a {
     background-image: url(image/intro.png);
     width: 100%;
     height: 718px;
+    /* width: 960px; */
+    /* height: 359px; */
 }
 
 .intro_text {
@@ -82,14 +102,15 @@ a {
     margin: 231px auto 231px auto;
 }
 
-.intro_text > h1,
-.intro_text > h4 {
-    color: #fff;
+.container {
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .contents_header {
     text-align: center;
 }
+
 .about {
     display: flex;
     background: red;
@@ -101,7 +122,6 @@ a {
 .about_contents  {
     flex: 1;
     background: blue;
-    margin: 0 100px;
 }
 
 .about_image {
@@ -114,7 +134,7 @@ a {
     height: 30px;
     font-size: 12px;
     background: #2f7afa;
-    color: #fff;
+    color: var(--text-color);
     line-height: 30px;
     margin: 25px auto;
     text-align: center;
@@ -123,7 +143,6 @@ a {
 .story {
     display: flex;
     background: red;
-    height: 600px;
     margin: auto;
 }
 
@@ -200,11 +219,10 @@ a {
 .team_members {
     display: flex;
     width: 1280px;
-    margin: auto;
+    margin: 0, auto;
 }
 .team_members > li {
-    margin: auto;
-    height: 512px;
+    height: 25%;
     background: white;
     text-align: center;
     list-style: none;
@@ -216,26 +234,31 @@ a {
 
 .team_image > img {
     margin-top: 36px;
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    padding: 30px;
+    padding: 20px;
     background-color: #4C029A;
 }
-  
-footer > div:first-child {
+
+footer > div {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+}
+
+footer > div > div:first-child {
     flex: 1;
     text-align: center;
-    color: #fff;
+    color: var(--text-color);
 }
   
-footer > div:last-child {
+footer > div >div:last-child {
     flex: 3;
-    color: #fff;
+    color: var(--text-color);
 }
   
 
