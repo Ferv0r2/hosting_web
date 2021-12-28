@@ -72,6 +72,7 @@ h4 {
   top: 0;
   background-color: #4c029a;
   padding: 8px 12px;
+  z-index: 1;
 }
 
 .navbar {
@@ -323,14 +324,30 @@ footer > div > div:first-child {
   color: var(--text-color);
 }
 
-footer > div > div:last-child {
+.footer_contents {
   flex: 3;
   color: var(--text-color);
+}
+
+.footer_contents > h6 {
+  line-height: 25px;
 }
 
 @media screen and (max-width: 768px) {
   html {
     scroll-behavior: auto;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 
   .nav_bg {
@@ -342,7 +359,7 @@ footer > div > div:last-child {
   }
 
   .navbar {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     align-items: flex-start;
   }
@@ -367,6 +384,11 @@ footer > div > div:last-child {
 
   .nav_toggleBtn {
     display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4%;
+    cursor: pointer;
   }
 
   .container {
@@ -385,10 +407,6 @@ footer > div > div:last-child {
     width: 100%;
   }
 
-  .team {
-    flex-wrap: wrap;
-  }
-
   /* .nav_toggleBtn:hover{
         animation: ani 1s linear infinite alternate;
     }
@@ -400,5 +418,32 @@ footer > div > div:last-child {
   .navbar_menu.active,
   .navbar_icons.active {
     display: flex;
+  }
+
+  .contents_header {
+    text-align: center;
+    margin-top: -75px;
+    padding-top: 75px;
+  }
+
+  .more {
+    right: 10%;
+  }
+
+  footer > div {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  footer > div > div:first-child {
+    flex: 1;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  .footer_contents {
+    flex: 3;
+    color: var(--text-color);
   }
 }
