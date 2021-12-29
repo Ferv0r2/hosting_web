@@ -62,7 +62,9 @@ a,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   text-decoration: none;
   color: var(--text-color);
 }
@@ -248,39 +250,78 @@ h4 {
 
 .faq {
   display: flex;
-  background: red;
   margin: auto;
 }
 
 .faq_contents {
-  margin: 0 10%;
   width: 100%;
-  background: blue;
   text-align: center;
 }
 
 .faq_contents > ul {
   list-style: none;
+  -webkit-padding-start: 0px;
+  font-family: "GongGothicLight";
 }
 
 .faq_contents > ul > div {
   flex: 1;
-  margin: 20% 0;
 }
 
-.ok {
+.area_01,
+.area_02,
+.area_03,
+.area_04,
+.area_05 {
+  display: block;
+  padding: 5%;
+  line-height: 40px;
+}
+
+.faq_01,
+.faq_02,
+.faq_03,
+.faq_04,
+.faq_05 {
+  position: relative;
+  flex-direction: column;
+  text-align: left;
+  margin: 0 12%;
+}
+
+.faq01,
+.faq02,
+.faq03,
+.faq04,
+.faq05 {
+  text-align: center;
   position: absolute;
+  top: 3px;
+  left: -10%;
+  width: 40px;
+  height: 30px;
   background: #4c029a;
   color: var(--text-color);
   cursor: pointer;
+  border-radius: 10px;
 }
 
-.answer {
-  display: none;
+.answer01,
+.answer02,
+.answer03,
+.answer04,
+.answer05 {
+  margin: 0 12%;
+  text-align: left;
+  visibility: hidden;
 }
 
-.answer.active {
-  display: flex;
+.answer01.active,
+.answer02.active,
+.answer03.active,
+.answer04.active,
+.answer05.active {
+  visibility: visible;
 }
 
 .team_container {
@@ -295,14 +336,13 @@ h4 {
 }
 .team_members > li {
   justify-content: space-between;
-  background: white;
   text-align: center;
   list-style: none;
 }
 
 .team_image > img {
   margin-top: 5%;
-  width: 100%;
+  width: 90%;
 }
 
 footer {
