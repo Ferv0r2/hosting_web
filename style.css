@@ -95,7 +95,7 @@ h6 {
 
 .navbar_logo > a {
   padding-top: 3%;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .navbar_menu {
@@ -154,6 +154,10 @@ h6 {
   margin: 70px 0;
 }
 
+.intro_text > h2:last-child {
+  font-family: "GongGothicLight";
+}
+
 .container {
   margin-left: 25%;
   margin-right: 25%;
@@ -169,6 +173,10 @@ h6 {
 .contents_header > h1 {
   padding: 15px 0;
   border: 10px solid var(--background-color);
+}
+
+.contents_header > h2 {
+  font-family: "GongGothicMedium";
 }
 
 .about_container {
@@ -193,7 +201,6 @@ h6 {
 .section_02 {
   margin-top: 10%;
   width: 100%;
-  background-image: url(image/about/about_banner.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -316,6 +323,14 @@ h6 {
   border-radius: 10px;
 }
 
+.faq01,
+.faq02,
+.faq03,
+.faq04,
+.faq05 {
+  font-size: 25px;
+}
+
 .answer01,
 .answer02,
 .answer03,
@@ -344,10 +359,19 @@ h6 {
   margin: 0, auto;
   -webkit-padding-start: 0px;
 }
+
 .team_members > li {
   justify-content: space-between;
   text-align: center;
   list-style: none;
+}
+
+.team_members > li > div:last-child > h5 {
+  font-size: 22px;
+}
+
+.team_members > li > div:last-child > h6 {
+  font-size: 16px;
 }
 
 .team_image > img {
