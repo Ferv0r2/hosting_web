@@ -105,9 +105,7 @@ h6 {
 
 .navbar_logo > a {
   padding-top: 11%;
-  color: #cf00cf;
-  text-shadow: 1px 1px 1px #f0f4f5;
-  -webkit-text-stroke: 1px #f0f4f5;
+  color: #f0f4f5;
 }
 
 .navbar_logo > img {
@@ -146,9 +144,10 @@ h6 {
 .nav_toggleBtn {
   display: none;
   position: absolute;
+  top: 0;
   right: 32px;
-  font-size: 24px;
-  color: #d49466;
+  font-size: 28px;
+  color: #ac01b4;
 }
 
 .intro_bg {
@@ -185,7 +184,7 @@ h6 {
   -webkit-background-clip: text;
 }
 
-.intro_text > h2:last-child {
+.intro_text > h2 {
   font-size: 24px;
   margin: 70px 0;
 }
@@ -195,7 +194,8 @@ h6 {
   margin-right: 25%;
 }
 
-.contents_header {
+.contents_header,
+.contents_header_purple {
   position: relative;
   text-align: center;
   padding-top: 75px;
@@ -212,8 +212,17 @@ h6 {
   font-family: "GmarketSansBold";
   font-style: italic;
 }
+.contents_header_purple > h1 {
+  padding: 15px 0;
+  /* border: 10px solid var(--background-color); */
+  color: #f0f4f5;
+  font-size: 70px;
+  font-family: "GmarketSansBold";
+  font-style: italic;
+}
 
-.contents_header > h2 {
+.contents_header > h2,
+.contents_header_purple > h2 {
   font-size: 28px;
   font-family: "NanumSquareExtraBold";
 }
@@ -236,6 +245,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .section_01 > h3 {
   line-height: 30px;
   font-family: "NanumSquareExtraBold";
@@ -249,7 +259,13 @@ h6 {
   background-position: center;
 }
 
+.feature {
+  text-align: center;
+  width: 100%;
+}
+
 .section_02 > ul {
+  line-height: 30px;
   -webkit-padding-start: 0px;
   list-style: none;
   font-family: "NanumSquareExtraBold";
@@ -327,8 +343,14 @@ h6 {
   width: 100%;
 }
 
+.container_purple {
+  background-color: #380359;
+}
+
 .faq_container {
   padding-bottom: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .faq_box {
@@ -353,33 +375,98 @@ h6 {
   line-height: 40px;
 }
 
-.faq {
+.faq_01,
+.faq_02,
+.faq_03,
+.faq_04,
+.faq_05 {
   text-align: left;
   font-family: "GmarketSansBold";
 }
 
-.faq > li > h2 {
+.faq_01 > li,
+.faq_02 > li,
+.faq_03 > li,
+.faq_04 > li,
+.faq_05 > li {
+  display: flex;
+  position: relative;
+  background: #4c029a;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.faq_01 > li > h2,
+.faq_02 > li > h2,
+.faq_03 > li > h2,
+.faq_04 > li > h2,
+.faq_05 > li > h2 {
   font-size: 26px;
 }
 
-.faq > li > h3 {
+.faq_01 > li > h3,
+.faq_02 > li > h3,
+.faq_03 > li > h3,
+.faq_04 > li > h3,
+.faq_05 > li > h3 {
   font-size: 20px;
+  margin-left: 10px;
   margin-left: 10px;
 }
 
-.faq > li {
-  display: flex;
+.faq_01_btn,
+.faq_02_btn,
+.faq_03_btn,
+.faq_04_btn,
+.faq_05_btn {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  font-size: 24px;
+  text-align: center;
+  top: 30%;
+  right: 4%;
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 10px;
 }
 
-.answer {
+.faq_01_btn:hover,
+.faq_02_btn:hover,
+.faq_03_btn:hover,
+.faq_04_btn:hover,
+.faq_05_btn:hover {
+  background: #ac01b4;
+}
+
+.answer_01,
+.answer_02,
+.answer_03,
+.answer_04,
+.answer_05 {
+  display: none;
   margin-left: 7%;
   margin-right: 7%;
   text-align: left;
   font-family: "NanumSquareExtraBold";
 }
 
+.answer_01.active,
+.answer_02.active,
+.answer_03.active,
+.answer_04.active,
+.answer_05.active {
+  display: flex;
+}
+
+.container_magenta {
+  background-color: #751f96;
+}
+
 .team_container {
   padding-bottom: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .team_members {
@@ -465,7 +552,7 @@ footer > div > div:first-child {
   }
 
   .navbar_logo {
-    font-size: 23px;
+    font-size: 26px;
   }
 
   .navbar_logo > a {
@@ -494,8 +581,8 @@ footer > div > div:first-child {
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
-    margin: 4%;
+    right: 5%;
+    margin-top: 45px;
     cursor: pointer;
   }
 
@@ -509,10 +596,17 @@ footer > div > div:first-child {
     margin-right: 10%;
   }
 
-  .contents_header {
-    text-align: center;
-    margin-top: -75px;
-    padding-top: 75px;
+  .contents_header > h1,
+  .contents_header_purple > h1 {
+    font-size: 54px;
+  }
+
+  .contents_header > h2,
+  .contents_header_purple > h2 {
+    margin-top: -10%;
+    padding-bottom: 10%;
+    font-size: 24px;
+    font-family: "NanumSquareExtraBold";
   }
 
   .intro_bg {
@@ -526,8 +620,18 @@ footer > div > div:first-child {
     margin-top: 40%;
   }
 
-  .intro_text > h2 {
+  .intro_text > h3 {
     margin: 20% 0;
+    font-size: 24px;
+  }
+
+  .intro_text > h1 {
+    margin: 20% 0;
+    font-size: 72px;
+  }
+
+  .intro_text > h2 {
+    font-size: 18px;
   }
 
   .section_01 > h2 {
@@ -535,7 +639,7 @@ footer > div > div:first-child {
   }
 
   .section_01 > h3 {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .story_contents {
@@ -544,6 +648,11 @@ footer > div > div:first-child {
 
   .story_contents > img {
     width: 100%;
+  }
+
+  .story_contents > h2 {
+    line-height: 40px;
+    font-size: 20px;
   }
 
   .metacell_contents {
@@ -558,14 +667,38 @@ footer > div > div:first-child {
     font-size: 10px;
   }
 
+  .faq_container {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
   .faq {
     margin-left: 3%;
     margin-right: 3%;
   }
 
+  .faq > li {
+    display: block;
+    text-align: center;
+  }
+
+  .faq > li > h2 {
+    font-size: 26px;
+  }
+  .faq > li > h3 {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
   .answer {
     margin-left: 3%;
     margin-right: 3%;
+    font-size: 18px;
+  }
+
+  .team_container {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .team_members {
@@ -573,7 +706,7 @@ footer > div > div:first-child {
   }
 
   .team_image > img {
-    width: 70%;
+    width: 75%;
   }
 
   footer > div {
