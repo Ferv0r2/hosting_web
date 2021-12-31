@@ -38,7 +38,7 @@
 
 body {
   margin: auto;
-  font-family: "GongGothicBold";
+  font-family: "NanumSquareExtraBold";
   background-color: #000;
   word-break: keep-all;
 }
@@ -97,7 +97,6 @@ ul {
   align-items: center;
   margin-left: 25%;
   margin-right: 25%;
-  font-family: "NanumSquareExtraBold";
 }
 
 .navbar_logo {
@@ -169,7 +168,6 @@ ul {
   margin: auto;
   text-align: center;
   margin-top: 11%;
-  font-family: "NanumSquareExtraBold";
 }
 
 .intro_text > h3 {
@@ -203,12 +201,10 @@ ul {
   position: relative;
   text-align: center;
   padding-top: 75px;
-  font-family: "NanumSquareExtraBold";
 }
 
 .contents_header > h1 {
   padding: 15px 0;
-  /* border: 10px solid var(--background-color); */
   background: linear-gradient(to top, #3f0eac, #ff00cc);
   color: transparent;
   -webkit-background-clip: text;
@@ -218,7 +214,6 @@ ul {
 }
 .contents_header_purple > h1 {
   padding: 15px 0;
-  /* border: 10px solid var(--background-color); */
   color: #f0f4f5;
   font-size: 70px;
   font-family: "GmarketSansBold";
@@ -228,7 +223,6 @@ ul {
 .contents_header > h2,
 .contents_header_purple > h2 {
   font-size: 28px;
-  font-family: "NanumSquareExtraBold";
 }
 
 .about_container {
@@ -250,7 +244,6 @@ ul {
 
 .section_01 > h3 {
   line-height: 30px;
-  font-family: "NanumSquareExtraBold";
 }
 
 .about_banner {
@@ -267,7 +260,6 @@ ul {
 .about_text {
   width: 100%;
   margin: auto;
-  text-align: center;
   margin-top: 35%;
   text-align: center;
   font-family: "GmarketSansBold";
@@ -279,6 +271,7 @@ ul {
 }
 
 .section_02 {
+  position: relative;
   margin-top: -5%;
   width: 100%;
   z-index: 3;
@@ -286,17 +279,76 @@ ul {
 
 .section_02 > ul {
   line-height: 24px;
-  font-family: "NanumSquareExtraBold";
+}
+
+.btn_about,
+.btn_story {
+  color: #fff;
+  background: #3f0eac;
+  border-radius: 1.5em;
+  left: 33%;
+  padding: 1em;
+  text-decoration: none;
+  width: 30%;
+  font-size: 20px;
+}
+
+.show_about,
+.show_story,
+.hide_about,
+.hide_story {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  text-align: center;
+  bottom: -1em;
+}
+
+.hide_about,
+.hide_story {
+  display: none;
+}
+.show_about:target,
+.show_story:target {
+  display: none;
+}
+
+.show_about:target ~ .hide_about,
+.show_story:target ~ .hide_story {
+  display: block;
+}
+
+.show_about:target ~ .feature {
+  max-height: 100%;
+}
+
+.show_story:target ~ .story_contents {
+  max-height: 100%;
+}
+
+.show_about:target ~ .fade,
+.show_story:target ~ .fade {
+  margin-top: 0;
 }
 
 .feature {
+  position: relative;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   text-align: center;
   margin-top: 10%;
-  font-family: "NanumSquareExtraBold";
+  max-height: 1000px;
+  overflow: hidden;
+  transition: 1000px 0.5s ease;
+}
+
+.fade {
+  background: linear-gradient(to bottom, rgba(100, 100, 100, 0) 0%, black 75%);
+  height: 200px;
+  margin-top: -200px;
+  position: relative;
 }
 
 .feature_header > img {
@@ -430,15 +482,20 @@ ul {
 }
 
 .story {
+  position: relative;
   display: flex;
   margin: 10% 0;
 }
 
 .story_contents {
+  position: relative;
   margin-left: 10%;
   margin-right: 10%;
   width: 100%;
   text-align: center;
+  max-height: 2100px;
+  overflow: hidden;
+  transition: 2100px 0.5s ease;
 }
 
 .story_contents > h3 {
@@ -447,14 +504,13 @@ ul {
   text-shadow: 5px 5px 10px #ac01b4;
   font-style: italic;
   padding-bottom: 5%;
-  font-family: "NanumSquareExtraBold";
 }
 
 .story_contents > h2 {
   text-shadow: 5px 5px 10px #ac01b4;
   font-style: italic;
-  font-family: "NanumSquareExtraBold";
   line-height: 80px;
+  padding-bottom: 20%;
 }
 
 .story_contents > img {
@@ -493,6 +549,14 @@ ul {
 
 .metacell_contents > ul > li > img {
   width: 100%;
+}
+
+.metacell_contents > ul > li > h3 {
+  font-size: 22px;
+}
+
+.metacell_contents > ul > li > h4 {
+  font-size: 18px;
 }
 
 .container_purple {
@@ -601,7 +665,6 @@ ul {
   margin-left: 10%;
   margin-right: 10%;
   text-align: left;
-  font-family: "NanumSquareExtraBold";
 }
 
 .answer_01.active,
@@ -643,7 +706,6 @@ ul {
 .team_members > li > div:last-child > h6 {
   margin-top: -15px;
   font-size: 18px;
-  font-family: "NanumSquareExtraBold";
 }
 
 .team_image > img {
@@ -658,7 +720,6 @@ footer {
 }
 
 footer > div {
-  font-family: "NanumSquareExtraBold";
   margin-left: 25%;
   margin-right: 25%;
   display: flex;
@@ -757,7 +818,6 @@ footer > div > div:first-child {
     margin-top: -10%;
     padding-bottom: 10%;
     font-size: 24px;
-    font-family: "NanumSquareExtraBold";
   }
 
   .intro_bg {
@@ -807,7 +867,6 @@ footer > div > div:first-child {
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
-    transform: scale(1.1);
   }
 
   .evol > img {
@@ -885,6 +944,13 @@ footer > div > div:first-child {
   .story_contents > h2 {
     line-height: 40px;
     font-size: 20px;
+    padding-bottom: 40%;
+  }
+
+  .btn_about,
+  .btn_story {
+    left: 30%;
+    font-size: 15px;
   }
 
   .metacell_contents {
