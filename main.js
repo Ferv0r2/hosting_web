@@ -21,7 +21,6 @@ toggleBtn.addEventListener("click", () => {
 
 faq_01_btn.addEventListener("click", () => {
   faq_answer_01.classList.toggle("active");
-  faq_btn.classList.toggle("active");
 });
 
 faq_02_btn.addEventListener("click", () => {
