@@ -30,6 +30,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --text-color: #f0f4f5;
   --background-color: #07021f;
@@ -222,11 +230,13 @@ ul {
 
 .contents_header > h2,
 .contents_header_purple > h2 {
-  font-size: 28px;
+  font-size: 35px;
+  font-style: italic;
 }
 
 .about_container {
   padding-bottom: 10%;
+  font-family: "NanumSquareBold";
 }
 
 .about_contents {
@@ -235,11 +245,14 @@ ul {
 }
 
 .section_01 {
+  position: relative;
   margin-top: 10%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
+  z-index: 1;
 }
 
 .section_01 > h3 {
@@ -252,9 +265,11 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  margin-top: 2%;
   width: 100%;
   height: 720px;
-  z-index: 1;
+  z-index: -1;
+  transform: scale(1.5);
 }
 
 .about_text {
@@ -275,10 +290,6 @@ ul {
   margin-top: -5%;
   width: 100%;
   z-index: 3;
-}
-
-.section_02 > ul {
-  line-height: 24px;
 }
 
 .btn_about,
@@ -331,6 +342,13 @@ ul {
   margin-top: 0;
 }
 
+.fade {
+  background: linear-gradient(to bottom, rgba(100, 100, 100, 0) 0%, black 75%);
+  height: 200px;
+  margin-top: -200px;
+  position: relative;
+}
+
 .feature {
   position: relative;
   width: 100%;
@@ -344,37 +362,54 @@ ul {
   transition: 1000px 0.5s ease;
 }
 
-.fade {
-  background: linear-gradient(to bottom, rgba(100, 100, 100, 0) 0%, black 75%);
-  height: 200px;
-  margin-top: -200px;
-  position: relative;
+.feature_header,
+.feature_content_header {
+  text-align: center;
+  padding-bottom: 8%;
 }
 
-.feature_header > img {
-  width: 80%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.evol {
-  margin: auto;
-}
-.evol > h1 {
+.feature_header > h4,
+.feature_content_header > h4 {
   font-family: "GmarketSansBold";
+  font-size: 35px;
+  font-style: italic;
+  padding-bottom: 2%;
+}
+
+.feature_content_header > h4 {
+  font-style: initial;
+}
+
+.feature_header > h5 {
+  font-size: 20px;
+  text-shadow: 0 0 7px #ac01b4, 0 0 10px #ac01b4, 0 0 21px #ac01b4;
+}
+
+.feature_content_img {
+  padding-bottom: 15%;
+}
+
+.feature_content_img > ul {
+  display: flex;
+}
+
+.feature_content_img > ul > li > img {
+  width: 70%;
+}
+
+.feature_content_header > ul {
+  line-height: 10px;
+}
+.feature_content_header > ul > li > h5 {
+  font-size: 18px;
+}
+
+.feature_content_header > ul > li:last-child > h5 {
+  color: #ff00ff;
 }
 
 .evol > img {
-  width: 60%;
-}
-
-.evol_contents > ul {
-  text-align: left;
-  padding: 0 3% 0 3%;
-}
-
-.evol_contents > ul > li > h3 {
-  font-size: 18px;
+  width: 80%;
 }
 
 .weather {
@@ -382,47 +417,70 @@ ul {
   padding-bottom: 10%;
   margin: 0 auto;
 }
-
-.sub_header {
-  padding-bottom: 2%;
-  line-height: 10px;
+.weather_area_header {
+  margin-right: 5%;
 }
+
 .sub_header > h2 {
-  font-size: 32px;
+  font-family: "GmarketSansBold";
+  font-size: 38px;
+  color: #ff00ff;
+}
+
+.sub_header > h3 {
+  padding-top: 1%;
+  font-family: "GmarketSansMedium";
+  font-size: 25px;
+  text-shadow: 0 0 7px #ac01b4, 0 0 10px #ac01b4, 0 0 21px #ac01b4;
 }
 
 .weather_content {
-  margin-bottom: 5%;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 5%;
 }
 
 .weather_content > h3 {
-  margin-top: 3%;
-  margin-bottom: 3%;
-  line-height: 0;
+  color: #bebebe;
+  margin-right: 12%;
 }
 
-.weather_content > div {
+.weather_content > div > ul {
   display: flex;
-  margin: 3%;
-}
-.weather_content > div > div {
-  display: flex;
+  margin: 0;
+  margin-left: 12%;
 }
 
-.weather_content > div > div > img {
-  width: 50%;
-  height: 100%;
-}
-
-.weather_content > div > div > h3 {
-  margin-top: 10%;
+.weather_content > div > ul > li {
   width: 100%;
-  font-size: 28px;
+  display: flex;
+}
+
+.weather_content > div > ul > li > h3 {
+  width: 100%;
+  font-size: 21px;
+  text-align: left;
+}
+
+.weather_content > div > ul > li:first-child > h3 {
+  margin-left: 30%;
 }
 
 .half_life {
   padding-bottom: 10%;
+  text-align: left;
 }
+
+.half_life_area_header {
+  margin-left: 15%;
+}
+
+.half_life_area_header > h3 {
+  margin-top: 3%;
+  color: #bebebe;
+  font-style: italic;
+}
+
 .half_life_graph {
   display: inline-block;
   background-image: url(image/about/about_half_life_graph.png);
@@ -433,48 +491,85 @@ ul {
   height: 520px;
 }
 
-.half_life_graph > div {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  margin-top: 11%;
-}
-
-.half_life_graph > div > h2 {
-  margin-right: 15%;
-  text-align: right;
-  font-size: 18px;
-}
-
-.life_cycle {
-  margin-bottom: 10%;
-}
-
-.life_cycle > .sub_header > h3 {
-  line-height: 24px;
+.life_cycle > .feature_content_header {
+  padding-bottom: 0;
 }
 
 .life_cycle_content > div > img {
-  width: 90%;
+  width: 100%;
 }
 
-.life_cycle_graph > div {
-  display: flex;
-}
-.life_cycle_graph > div > img {
-  width: 45%;
+.life_cycle_text {
+  padding-bottom: 10%;
 }
 
-.graph_info {
+.life_cycle_text > li {
   text-align: left;
+  margin-left: 20%;
+}
+
+.rarity .sub_header > h2,
+.life_cycle_graph .sub_header > h2 {
+  font-size: 25px;
 }
 
 .rarity_content > div > img {
-  width: 80%;
+  width: 70%;
+  padding-bottom: 12%;
 }
 
-.warning {
-  color: rgb(231, 42, 42);
+.life_cycle_graph .sub_header > h3 {
+  font-size: 18px;
+  font-style: italic;
+  text-align: left;
+  margin-left: 21%;
+  margin-top: -1%;
+}
+
+.life_cycle_graph > div > img {
+  width: 90%;
+  padding-bottom: 20%;
+}
+
+.base_code > .feature_content_header > h5 {
+  font-size: 25px;
+  font-style: italic;
+  margin-top: -4%;
+}
+
+.base_code_content > .sub_header > h2,
+.eco_donation_content > .sub_header > h2 {
+  font-size: 25px;
+  font-family: "GmarketSansBold";
+  font-style: italic;
+}
+
+.base_code_img {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.base_code_img > li > img {
+  width: 50%;
+}
+
+.base_code_text {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 15%;
+}
+
+.eco_donation_content > .sub_header {
+  margin-top: -10%;
+}
+.eco_donation_content .sub_header > h3 {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.eco_donation_content > div > img {
+  margin: 3%;
+  width: 30%;
 }
 
 .story_container {
@@ -501,13 +596,13 @@ ul {
 .story_contents > h3 {
   font-size: 40px;
   margin-top: 0;
-  text-shadow: 5px 5px 10px #ac01b4;
+  text-shadow: 0 0 7px #ac01b4, 0 0 10px #ac01b4, 0 0 21px #ac01b4;
   font-style: italic;
   padding-bottom: 5%;
 }
 
 .story_contents > h2 {
-  text-shadow: 5px 5px 10px #ac01b4;
+  text-shadow: 0 0 7px #ac01b4, 0 0 10px #ac01b4, 0 0 21px #ac01b4;
   font-style: italic;
   line-height: 80px;
   padding-bottom: 20%;
@@ -515,6 +610,20 @@ ul {
 
 .story_contents > img {
   width: 65%;
+}
+
+.sa {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sa-up {
+  transform: translate(0, 100px);
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
 }
 
 .metacell_container {
@@ -545,6 +654,7 @@ ul {
 
 .metacell_contents > ul > li {
   flex: 1;
+  overflow: hidden;
 }
 
 .metacell_contents > ul > li > img {
@@ -665,6 +775,13 @@ ul {
   margin-left: 10%;
   margin-right: 10%;
   text-align: left;
+  font-family: "NanumSquareBold";
+}
+
+@keyframes fadeInText {
+  100% {
+    opacity: 1;
+  }
 }
 
 .answer_01.active,
@@ -673,6 +790,8 @@ ul {
 .answer_04.active,
 .answer_05.active {
   display: flex;
+  opacity: 0;
+  animation: fadeInText 0.4s ease-out forwards;
 }
 
 .container_magenta {
@@ -711,6 +830,14 @@ ul {
 .team_image > img {
   margin-top: 5%;
   width: 90%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.team_image > img:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 footer {
@@ -838,7 +965,7 @@ footer > div > div:first-child {
 
   .intro_text > h1 {
     margin: 20% 0;
-    font-size: 72px;
+    font-size: 54px;
   }
 
   .intro_text > h2 {
