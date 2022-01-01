@@ -2,7 +2,7 @@ const toggleBtn = document.querySelector(".nav_toggleBtn");
 const menu = document.querySelector(".navbar_menu");
 const icons = document.querySelector(".navbar_icons");
 
-const saTriggerMargin = 300;
+const saTriggerMargin = 75;
 const saElementList = document.querySelectorAll(".sa");
 
 const faq_01_btn = document.querySelector(".faq_01_btn");
