@@ -2,8 +2,8 @@ const toggleBtn = document.querySelector(".nav_toggleBtn");
 const menu = document.querySelector(".navbar_menu");
 const icons = document.querySelector(".navbar_icons");
 
-const saTriggerMargin = 75;
-const saElementList = document.querySelectorAll(".sa");
+// const saTriggerMargin = 75;
+// const saElementList = document.querySelectorAll(".sa");
 
 const faq_01_btn = document.querySelector(".faq_01_btn");
 const faq_02_btn = document.querySelector(".faq_02_btn");
@@ -22,21 +22,21 @@ toggleBtn.addEventListener("click", () => {
   icons.classList.toggle("active");
 });
 
-const saFunc = function () {
-  for (const element of saElementList) {
-    if (!element.classList.contains("show")) {
-      if (
-        window.innerHeight >
-        element.getBoundingClientRect().top + saTriggerMargin
-      ) {
-        element.classList.add("show");
-      }
-    }
-  }
-};
+// const saFunc = function () {
+//   for (const element of saElementList) {
+//     if (!element.classList.contains("show")) {
+//       if (
+//         window.innerHeight >
+//         element.getBoundingClientRect().top + saTriggerMargin
+//       ) {
+//         element.classList.add("show");
+//       }
+//     }
+//   }
+// };
 
-window.addEventListener("load", saFunc);
-window.addEventListener("scroll", saFunc);
+// window.addEventListener("load", saFunc);
+// window.addEventListener("scroll", saFunc);
 
 faq_01_btn.addEventListener("click", () => {
   faq_answer_01.classList.toggle("active");

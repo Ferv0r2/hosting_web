@@ -38,6 +38,243 @@
   font-style: normal;
 }
 
+@keyframes japoeye {
+  0% {
+    background-image: url(image/nft/Kepler-452b-Cell-0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/sprout-0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/adult-0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/spawning-0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/Kepler-452b-Cell-0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes rosa {
+  0% {
+    background-image: url(image/nft/Kepler-452b-Cell-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/sprout-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/adult-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/spawning-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/Kepler-452b-Cell-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes helianthus {
+  0% {
+    background-image: url(image/nft/Kepler-452b-Cell-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/sprout-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/adult-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/spawning-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/Kepler-452b-Cell-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes nepenthe {
+  0% {
+    background-image: url(image/nft/Kepler-452b-Cell-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/sprout-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/adult-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/spawning-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/Kepler-452b-Cell-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes cactus {
+  0% {
+    background-image: url(image/nft/Kepler-452b-Cell-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/sprout-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/adult-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/spawning-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/Kepler-452b-Cell-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes type_cell {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes type_sprout {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes type_adult {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes type_spawning {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 :root {
   --text-color: #f0f4f5;
   --background-color: #07021f;
@@ -621,7 +858,7 @@ ul {
   width: 30%;
 }
 
-.sa {
+/* .sa {
   opacity: 0;
   transition: all 0.5s ease;
 }
@@ -633,49 +870,123 @@ ul {
 .sa.show {
   opacity: 1;
   transform: none;
+} */
+
+.container_deep_purple {
+  background-color: #2a002b;
 }
 
-.metacell_container {
+.nft_container {
   padding-bottom: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-.metacell {
+.nft {
   margin: auto;
   margin: 10% 0;
 }
 
-.metacell_contents {
+.nft_contents {
   width: 100%;
   text-align: center;
+  margin-top: -10%;
 }
 
-.metacell_contents > ul {
+.nft_contents > ul {
   margin: 0;
   padding: 0;
   display: flex;
   text-align: center;
 }
 
-.metacell_contents > ul:nth-child(1),
-.metacell_contents > ul:nth-child(2) {
-  border-bottom: #4c029a solid 5px;
-}
-
-.metacell_contents > ul > li {
+.nft_contents > ul > li {
   flex: 1;
-  overflow: hidden;
 }
 
-.metacell_contents > ul > li > img {
-  width: 100%;
+.nft_contents > ul > li > h3 {
+  font-size: 25px;
+  font-family: "GmarketSansBold";
+  margin-bottom: 0;
 }
 
-.metacell_contents > ul > li > h3 {
-  font-size: 22px;
-}
-
-.metacell_contents > ul > li > h4 {
+.nft_contents > ul > li > h4 {
   font-size: 18px;
+  text-shadow: 0 0 7px #ac01b4, 0 0 10px #ac01b4, 0 0 21px #ac01b4;
+}
+
+.japoeye {
+  height: 180px;
+  background-image: url(image/nft/Kepler-452b-Cell-0.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: japoeye 12s infinite;
+}
+.rosa {
+  width: 100%;
+  height: 100%;
+  background-image: url(image/nft/Kepler-452b-Cell-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: rosa 12s infinite;
+}
+.helianthus {
+  width: 100%;
+  height: 100%;
+  background-image: url(image/nft/Kepler-452b-Cell-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: helianthus 12s infinite;
+}
+.nepenthe {
+  width: 100%;
+  height: 100%;
+  background-image: url(image/nft/Kepler-452b-Cell-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: nepenthe 12s infinite;
+}
+.cactus {
+  width: 100%;
+  height: 100%;
+  background-image: url(image/nft/Kepler-452b-Cell-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: cactus 12s infinite;
+}
+
+.type_level {
+  position: relative;
+}
+
+.type_level > h2 {
+  width: 100%;
+  font-size: 21px;
+  font-family: "GmarketSansBold";
+  font-style: italic;
+  top: 0;
+}
+
+.type_cell {
+  position: absolute;
+  animation: type_cell 12s infinite;
+}
+.type_sprout {
+  position: absolute;
+  animation: type_sprout 12s infinite;
+}
+.type_adult {
+  position: absolute;
+  animation: type_adult 12s infinite;
+}
+.type_spawning {
+  position: absolute;
+  animation: type_spawning 12s infinite;
 }
 
 .container_purple {
@@ -1149,11 +1460,11 @@ footer > div > div:first-child {
     padding: 0.5em;
   }
 
-  .metacell_contents > ul > li > h3 {
+  .nft_contents > ul > li > h3 {
     font-size: 15px;
   }
 
-  .metacell_contents > ul > li > h4 {
+  .nft_contents > ul > li > h4 {
     font-size: 10px;
   }
 
