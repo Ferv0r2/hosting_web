@@ -937,6 +937,7 @@ ul {
   background-size: contain;
   animation: japoeye 12s infinite;
 }
+
 .rosa {
   width: 100%;
   height: 100%;
@@ -946,6 +947,7 @@ ul {
   background-size: contain;
   animation: rosa 12s infinite;
 }
+
 .helianthus {
   width: 100%;
   height: 100%;
@@ -955,6 +957,7 @@ ul {
   background-size: contain;
   animation: helianthus 12s infinite;
 }
+
 .nepenthe {
   width: 100%;
   height: 100%;
@@ -964,6 +967,7 @@ ul {
   background-size: contain;
   animation: nepenthe 12s infinite;
 }
+
 .cactus {
   width: 100%;
   height: 100%;
@@ -1018,6 +1022,19 @@ ul {
   width: 40%;
   bottom: -50%;
   left: 29%;
+}
+
+.container_medium_purple {
+  background-color: #3f034f;
+}
+
+.roadmap_contents {
+  margin-top: -10%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.roadmap_contents > img {
+  width: 100%;
 }
 
 .container_purple {
@@ -1150,13 +1167,12 @@ ul {
 }
 
 .team_container {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   margin-left: 25%;
   margin-right: 25%;
 }
 
 .team_members {
-  margin-top: 10%;
   display: flex;
   width: 100%;
   margin: 0, auto;
@@ -1179,6 +1195,7 @@ ul {
 }
 
 .team_image > img {
+  border-radius: 0.5em;
   margin-top: 5%;
   width: 90%;
   -webkit-transform: scale(1);
@@ -1192,6 +1209,7 @@ ul {
 }
 
 footer {
+  position: relative;
   font-family: "NanumSquareBold";
   padding: 20px;
   background-color: var(--background-color);
@@ -1218,6 +1236,18 @@ footer > div > div:first-child {
 .footer_contents > h6 {
   font-size: 18px;
   line-height: 25px;
+}
+
+.community_icons {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.community_icons > li {
+  margin: 10%;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1261,12 +1291,6 @@ footer > div > div:first-child {
     text-align: center;
   }
 
-  .navbar_icons {
-    display: none;
-    width: 100%;
-    justify-content: center;
-  }
-
   .nav_toggleBtn {
     display: block;
     position: absolute;
@@ -1276,8 +1300,7 @@ footer > div > div:first-child {
     cursor: pointer;
   }
 
-  .navbar_menu.active,
-  .navbar_icons.active {
+  .navbar_menu.active {
     display: flex;
   }
 
