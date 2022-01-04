@@ -520,7 +520,7 @@ ul {
   width: 65%;
 }
 .about_container {
-  padding-bottom: 10%;
+  padding-bottom: 8%;
   font-family: "NanumSquareBold";
 }
 
@@ -568,7 +568,6 @@ ul {
   font-family: "GmarketSansBold";
 }
 
-.btn_about,
 .btn_story {
   color: #fff;
   background: #a100a3;
@@ -581,48 +580,37 @@ ul {
   font-style: italic;
 }
 
-.show_about,
 .show_story,
-.hide_about,
 .hide_story {
   position: absolute;
-  bottom: 0;
   z-index: 1;
   text-align: center;
   bottom: -1em;
 }
 
-.hide_about,
 .hide_story {
   display: none;
 }
-.show_about:target,
 .show_story:target {
   display: none;
 }
 
-.show_about:target ~ .hide_about,
 .show_story:target ~ .hide_story {
   display: block;
-}
-
-.show_about:target ~ .feature {
-  max-height: 100%;
 }
 
 .show_story:target ~ .story_contents {
   max-height: 100%;
 }
 
-.show_about:target ~ .fade,
 .show_story:target ~ .fade {
   margin-top: 0;
 }
 
 .fade {
   background: linear-gradient(to bottom, rgba(100, 100, 100, 0) 0%, black 75%);
-  height: 300px;
-  margin-top: -300px;
+  height: 220px;
+  margin-top: -220px;
   position: relative;
 }
 
@@ -634,9 +622,6 @@ ul {
   background-size: contain;
   text-align: center;
   margin-top: 10%;
-  max-height: 1000px;
-  overflow: hidden;
-  transition: 1000px 0.5s ease;
 }
 
 .feature_header,
@@ -752,7 +737,6 @@ ul {
 }
 
 .half_life {
-  position: relative;
   padding-bottom: 10%;
   text-align: left;
 }
@@ -768,13 +752,19 @@ ul {
 }
 
 .half_life_graph {
-  display: inline-block;
+  position: relative;
   background-image: url(image/about/about_half_life_graph.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   width: 100%;
   height: 520px;
+}
+
+.half_life_text {
+  position: absolute;
+  top: 20%;
+  right: 15%;
 }
 
 .life_cycle > .feature_content_header {
@@ -902,45 +892,52 @@ ul {
 
 .nft_contents {
   position: relative;
-  width: 100%;
   text-align: center;
   margin-top: -10%;
 }
 
 .nft_contents > ul {
-  margin: 0;
-  padding: 0;
   display: flex;
   text-align: center;
+  width: 100%;
 }
 
 .nft_contents > ul > li {
-  flex: 1;
+  justify-content: space-between;
+  text-align: center;
+  align-items: baseline;
+  width: 100%;
+  margin: 1%;
 }
 
-.nft_contents > ul > li > h3 {
+.nft_contents > ul > li > div {
+  margin: 0;
+}
+
+.nft_contents > ul > li > div > h3 {
   font-size: 25px;
   font-family: "GmarketSansBold";
   margin-bottom: 0;
 }
 
-.nft_contents > ul > li > h4 {
+.nft_contents > ul > li > div > h4 {
   font-size: 18px;
   text-shadow: 0 0 7px #ac01b4, 0 0 10px #ac01b4, 0 0 21px #ac01b4;
 }
 
 .japoeye {
-  height: 180px;
+  width: 100%;
+  height: 192px;
   background-image: url(image/nft/Kepler-452b-Cell-0.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   animation: japoeye 12s infinite;
 }
 
 .rosa {
   width: 100%;
-  height: 100%;
+  height: 192px;
   background-image: url(image/nft/Kepler-452b-Cell-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -950,7 +947,7 @@ ul {
 
 .helianthus {
   width: 100%;
-  height: 100%;
+  height: 192px;
   background-image: url(image/nft/Kepler-452b-Cell-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -960,7 +957,7 @@ ul {
 
 .nepenthe {
   width: 100%;
-  height: 100%;
+  height: 192px;
   background-image: url(image/nft/Kepler-452b-Cell-3.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -970,7 +967,7 @@ ul {
 
 .cactus {
   width: 100%;
-  height: 100%;
+  height: 192px;
   background-image: url(image/nft/Kepler-452b-Cell-4.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1033,8 +1030,14 @@ ul {
   margin-left: 15%;
   margin-right: 15%;
 }
-.roadmap_contents > img {
+
+.roadmap_img {
   width: 100%;
+  height: 960px;
+  background-image: url(image/roadmap/roadmap.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .container_purple {
@@ -1203,6 +1206,7 @@ ul {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 .team_image > img:hover {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
@@ -1255,6 +1259,10 @@ footer > div > div:first-child {
     scroll-behavior: auto;
   }
 
+  body {
+    width: 100%;
+  }
+
   h1 {
     font-size: 36px;
   }
@@ -1295,7 +1303,7 @@ footer > div > div:first-child {
     display: block;
     position: absolute;
     top: 0;
-    right: 5%;
+    right: 8%;
     margin-top: 45px;
     cursor: pointer;
   }
@@ -1326,6 +1334,7 @@ footer > div > div:first-child {
     background-repeat: no-repeat;
     background-image: url(image/banner_mobile.png);
     background-size: contain;
+    /* transform: scale(1.1); */
   }
 
   .intro_text {
@@ -1411,6 +1420,10 @@ footer > div > div:first-child {
     transform: scale(1.2);
   }
 
+  .evol > div > ul {
+    margin-left: 3%;
+  }
+
   .feature_content_header > ul {
     text-align: left;
   }
@@ -1478,6 +1491,14 @@ footer > div > div:first-child {
     margin-bottom: -20%;
   }
 
+  .half_life_text {
+    top: 40%;
+    right: 5%;
+  }
+  .half_life_text > h3 {
+    font-size: 10px;
+  }
+
   .life_cycle > .sub_header {
     line-height: initial;
   }
@@ -1493,6 +1514,10 @@ footer > div > div:first-child {
     transform: scale(1.1);
   }
 
+  .life_cycle_text > li {
+    margin-left: 3%;
+  }
+
   .life_cycle_graph > div {
     display: initial;
   }
@@ -1504,6 +1529,45 @@ footer > div > div:first-child {
 
   .rarity > .sub_header {
     line-height: initial;
+  }
+
+  .rarity .sub_header > h2,
+  .life_cycle_graph .sub_header > h2 {
+    font-size: 19px;
+  }
+
+  .rarity_content > div > img {
+    width: 100%;
+  }
+  .life_cycle_graph > div > img {
+    width: 100%;
+  }
+
+  .base_code > .feature_content_header > h5 {
+    font-size: 20px;
+  }
+
+  .base_code_content > .sub_header > h2,
+  .eco_donation_content > .sub_header > h2 {
+    font-size: 19px;
+  }
+
+  .base_code_img > li > img {
+    width: 100%;
+  }
+
+  .base_code_text > h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 15px;
+  }
+
+  .eco_donation_content > div > img {
+    width: 70%;
+  }
+
+  .eco_donation_content > div > h3:last-child {
+    padding-bottom: 30%;
   }
 
   .btn_about,
@@ -1519,10 +1583,16 @@ footer > div > div:first-child {
     margin-right: 3%;
   }
 
-  .nft_contents > ul > li {
-    flex-wrap: wrap;
+  .nft_contents {
+    padding-bottom: 10%;
   }
 
+  .nft_contents > ul {
+    flex-wrap: wrap;
+  }
+  .nft_contents > ul > li {
+    padding: 5%;
+  }
   .nft_contents > ul > li > h3 {
     font-size: 15px;
   }
@@ -1532,7 +1602,31 @@ footer > div > div:first-child {
   }
 
   .type_level > h2 {
-    font-size: 15px;
+    font-size: 20px;
+  }
+
+  .type_level {
+    display: none;
+  }
+
+  .minting {
+    display: none;
+  }
+
+  .roadmap_contents {
+    margin-top: -20%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .roadmap_img {
+    width: 100%;
+    height: 618px;
+    transform: scale(1.2);
+    background-image: url(image/roadmap/roadmap_mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
   .faq_container {
@@ -1573,7 +1667,10 @@ footer > div > div:first-child {
   .faq_03 > li > h2,
   .faq_04 > li > h2,
   .faq_05 > li > h2 {
-    font-size: 24px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0px;
+    font-size: 26px;
   }
   .faq_01 > li > h3,
   .faq_02 > li > h3,
@@ -1588,9 +1685,12 @@ footer > div > div:first-child {
   .answer_03,
   .answer_04,
   .answer_05 {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .area > div:last-child > li > h3 {
+    font-size: 16px;
   }
 
   .team_container {
@@ -1607,7 +1707,9 @@ footer > div > div:first-child {
   }
 
   footer > div {
+    position: relative;
     margin: 0;
+    padding-top: 5%;
     display: flex;
     align-items: center;
   }
@@ -1626,5 +1728,15 @@ footer > div > div:first-child {
   .footer_contents > h6 {
     margin-left: 10px;
     font-size: 12px;
+  }
+
+  .community_icons {
+    justify-content: center;
+    top: -15%;
+    position: absolute;
+  }
+  .community_icons > li {
+    margin: 3%;
+    font-size: 28px;
   }
 }
