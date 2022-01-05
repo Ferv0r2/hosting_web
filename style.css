@@ -853,7 +853,7 @@ ul {
   padding-bottom: 15%;
 }
 .eco_donation_content .sub_header > h3 {
-  font-size: 18px;
+  font-size: 24px;
   font-style: italic;
 }
 
@@ -1575,6 +1575,10 @@ footer > div > div:first-child {
     margin-left: 5%;
     margin-right: 5%;
     font-size: 15px;
+  }
+
+  .eco_donation_content > .sub_header > h3 {
+    font-size: 18px;
   }
 
   .eco_donation_content > div > img {
