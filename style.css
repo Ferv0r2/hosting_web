@@ -1158,6 +1158,10 @@ ul {
   font-family: "NanumSquareBold";
 }
 
+.answer_04 > li > h3 > p {
+  font-style: italic;
+}
+
 @keyframes fadeInText {
   100% {
     opacity: 1;
