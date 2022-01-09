@@ -1261,6 +1261,7 @@ footer > div > div:first-child {
   display: flex;
   width: 100%;
   justify-content: center;
+  padding-right: 30px;
 }
 
 .community_icons > li {
@@ -1762,6 +1763,7 @@ footer > div > div:first-child {
     justify-content: center;
     top: -15%;
     position: absolute;
+    padding-right: 0;
   }
   .community_icons > li {
     margin: 3%;
