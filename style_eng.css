@@ -386,7 +386,7 @@ ul {
   font-size: 30px;
 }
 .lang::after {
-  content: "ENG";
+  content: "KOR";
   font-size: 18px;
   height: 100%;
   vertical-align: middle;

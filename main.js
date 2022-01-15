@@ -22,22 +22,6 @@ toggleBtn.addEventListener("click", () => {
   menu.classList.toggle("active");
 });
 
-// const saFunc = function () {
-//   for (const element of saElementList) {
-//     if (!element.classList.contains("show")) {
-//       if (
-//         window.innerHeight >
-//         element.getBoundingClientRect().top + saTriggerMargin
-//       ) {
-//         element.classList.add("show");
-//       }
-//     }
-//   }
-// };
-
-// window.addEventListener("load", saFunc);
-// window.addEventListener("scroll", saFunc);
-
 faq_01_btn.addEventListener("click", () => {
   faq_answer_01.classList.toggle("active");
 });
@@ -61,3 +45,19 @@ faq_05_btn.addEventListener("click", () => {
 faq_06_btn.addEventListener("click", () => {
   faq_answer_06.classList.toggle("active");
 });
+
+// const saFunc = function () {
+//   for (const element of saElementList) {
+//     if (!element.classList.contains("show")) {
+//       if (
+//         window.innerHeight >
+//         element.getBoundingClientRect().top + saTriggerMargin
+//       ) {
+//         element.classList.add("show");
+//       }
+//     }
+//   }
+// };
+
+// window.addEventListener("load", saFunc);
+// window.addEventListener("scroll", saFunc);
