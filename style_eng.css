@@ -384,7 +384,7 @@ ul {
   right: 15%;
   color: #f0f4f5;
   font-size: 30px;
-  padding: 4px;
+  padding: 4px 4px 0 4px;
 }
 
 .lang::after {
@@ -561,7 +561,7 @@ ul {
 
 .about_banner {
   display: inline-block;
-  background-image: url(image/about/about_banner.png);
+  background-image: url(image_eng/about/about_banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -593,15 +593,15 @@ ul {
   width: 20%;
   font-size: 24px;
   font-style: italic;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .btn_story:hover {
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .show_story,
@@ -710,14 +710,14 @@ ul {
 
 .sub_header > h2 {
   font-family: "GmarketSansBold";
-  font-size: 38px;
+  font-size: 30px;
   color: #ff00ff;
 }
 
 .sub_header > h3 {
   padding-top: 1%;
   font-family: "GmarketSansMedium";
-  font-size: 25px;
+  font-size: 22px;
   text-shadow: 0 0 7px #ac01b4, 0 0 10px #ac01b4, 0 0 21px #ac01b4;
 }
 
@@ -807,12 +807,12 @@ ul {
 
 .life_cycle_text > li {
   text-align: left;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .rarity .sub_header > h2,
 .life_cycle_graph .sub_header > h2 {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .rarity_content > div > img {
@@ -824,7 +824,7 @@ ul {
   font-size: 18px;
   font-style: italic;
   text-align: left;
-  margin-left: 21%;
+  margin-left: 10%;
   margin-top: -1%;
 }
 
@@ -846,7 +846,7 @@ ul {
 
 .base_code_content > .sub_header > h2,
 .eco_donation_content > .sub_header > h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "GmarketSansBold";
   font-style: italic;
 }
@@ -878,7 +878,7 @@ ul {
   padding-bottom: 15%;
 }
 .eco_donation_content .sub_header > h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-style: italic;
 }
 
@@ -1046,15 +1046,15 @@ ul {
   width: 40%;
   bottom: -50%;
   left: 29%;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .minting:hover {
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .pdf {
@@ -1070,15 +1070,15 @@ ul {
   width: 40%;
   bottom: -30%;
   left: 29%;
-  -webkit-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .pdf:hover {
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .container_medium_purple {
@@ -1094,7 +1094,7 @@ ul {
 .roadmap_img {
   width: 100%;
   height: 960px;
-  background-image: url(image/roadmap/roadmap.png);
+  background-image: url(image_eng/roadmap/roadmap.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1171,7 +1171,7 @@ ul {
   display: block;
   margin: 0;
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 10px;
   margin-left: 10px;
 }
@@ -1218,6 +1218,7 @@ ul {
 
 .answer_04 > li > h3 > p {
   font-style: italic;
+  display: none;
 }
 
 @keyframes fadeInText {
@@ -1372,6 +1373,16 @@ footer > div > div:first-child {
     text-align: center;
   }
 
+  .lang {
+    position: inherit;
+    display: none;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
   .nav_toggleBtn {
     display: block;
     position: absolute;
@@ -1382,6 +1393,10 @@ footer > div > div:first-child {
   }
 
   .navbar_menu.active {
+    display: flex;
+  }
+
+  .lang.active {
     display: flex;
   }
 
@@ -1705,7 +1720,7 @@ footer > div > div:first-child {
     width: 100%;
     height: 618px;
     transform: scale(1.2);
-    background-image: url(image/roadmap/roadmap_mobile.png);
+    background-image: url(image_eng/roadmap/roadmap_mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1855,6 +1870,16 @@ footer > div > div:first-child {
     margin-right: 10%;
   }
 
+  .lang {
+    margin-top: 1%;
+    right: 1%;
+    font-size: 24px;
+  }
+
+  .lang::after {
+    font-size: 12px;
+  }
+
   .intro_bg {
     height: 742px;
   }
@@ -1897,7 +1922,7 @@ footer > div > div:first-child {
     width: 100%;
     height: 618px;
     transform: scale(0.8);
-    background-image: url(image/roadmap/roadmap_mobile.png);
+    background-image: url(image_eng/roadmap/roadmap_mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -1915,6 +1940,11 @@ footer > div > div:first-child {
   .minting {
     font-size: 18px;
     bottom: -30%;
+  }
+
+  .pdf {
+    font-size: 18px;
+    bottom: -20%;
   }
 
   .faq_container {
@@ -1937,7 +1967,7 @@ footer > div > div:first-child {
   .faq_04 > li > h3,
   .faq_05 > li > h3,
   .faq_06 > li > h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .answer_01 > li > h3,
@@ -1981,6 +2011,10 @@ footer > div > div:first-child {
     font-size: 15px;
     line-height: 25px;
   }
+
+  .community_icons {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 959px) and (max-width: 1604px) {
@@ -2009,6 +2043,15 @@ footer > div > div:first-child {
   .navbar {
     margin-left: 20%;
     margin-right: 20%;
+  }
+
+  .lang {
+    right: 5%;
+    font-size: 24px;
+  }
+
+  .lang::after {
+    font-size: 12px;
   }
 
   .container {
@@ -2063,7 +2106,13 @@ footer > div > div:first-child {
     font-size: 14px;
   }
 
+  .btn_story {
+    font-size: 18px;
+  }
   .minting {
+    font-size: 18px;
+  }
+  .pdf {
     font-size: 18px;
   }
 
@@ -2082,7 +2131,7 @@ footer > div > div:first-child {
   .faq_04 > li > h3,
   .faq_05 > li > h3,
   .faq_06 > li > h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .faq_01_btn,
@@ -2091,7 +2140,7 @@ footer > div > div:first-child {
   .faq_04_btn,
   .faq_05_btn,
   .faq_06_btn {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .answer_01 > li > h3,
@@ -2115,6 +2164,9 @@ footer > div > div:first-child {
   .footer_contents > h6 {
     font-size: 15px;
     line-height: 25px;
+  }
+  .community_icons {
+    flex-wrap: wrap;
   }
 }
 

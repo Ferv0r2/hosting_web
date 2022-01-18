@@ -1,5 +1,6 @@
 const toggleBtn = document.querySelector(".nav_toggleBtn");
 const menu = document.querySelector(".navbar_menu");
+const lang = document.querySelector(".lang");
 
 // const saTriggerMargin = 75;
 // const saElementList = document.querySelectorAll(".sa");
@@ -20,6 +21,7 @@ const faq_answer_06 = document.querySelector(".answer_06");
 
 toggleBtn.addEventListener("click", () => {
   menu.classList.toggle("active");
+  lang.classList.toggle("active");
 });
 
 faq_01_btn.addEventListener("click", () => {

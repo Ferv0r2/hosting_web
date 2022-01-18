@@ -384,11 +384,11 @@ ul {
   right: 15%;
   color: #f0f4f5;
   font-size: 30px;
-  padding: 4px;
+  padding: 4px 4px 0 4px;
 }
 
 .lang::after {
-  content: "KOR";
+  content: "ENG";
   font-size: 18px;
   height: 100%;
   vertical-align: middle;
@@ -1372,6 +1372,16 @@ footer > div > div:first-child {
     text-align: center;
   }
 
+  .lang {
+    position: inherit;
+    display: none;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
   .nav_toggleBtn {
     display: block;
     position: absolute;
@@ -1382,6 +1392,9 @@ footer > div > div:first-child {
   }
 
   .navbar_menu.active {
+    display: flex;
+  }
+  .lang.active {
     display: flex;
   }
 
