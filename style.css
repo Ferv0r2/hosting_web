@@ -1868,6 +1868,16 @@ footer > div > div:first-child {
     margin-right: 10%;
   }
 
+  .lang {
+    margin-top: 1%;
+    right: 1%;
+    font-size: 24px;
+  }
+
+  .lang::after {
+    font-size: 12px;
+  }
+
   .intro_bg {
     height: 742px;
   }
@@ -1928,6 +1938,11 @@ footer > div > div:first-child {
   .minting {
     font-size: 18px;
     bottom: -30%;
+  }
+
+  .pdf {
+    font-size: 18px;
+    bottom: -20%;
   }
 
   .faq_container {
@@ -2024,6 +2039,14 @@ footer > div > div:first-child {
     margin-right: 20%;
   }
 
+  .lang {
+    right: 5%;
+    font-size: 24px;
+  }
+
+  .lang::after {
+    font-size: 12px;
+  }
   .container {
     margin-left: 20%;
     margin-right: 20%;
