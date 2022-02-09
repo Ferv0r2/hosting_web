@@ -1216,8 +1216,8 @@ ul {
   font-family: "NanumSquareBold";
 }
 
-.answer_04 > li > h3 > p {
-  font-style: italic;
+.answer_04 > li > h3 > a:hover {
+  color: #cf00cf;
 }
 
 @keyframes fadeInText {
@@ -1280,6 +1280,55 @@ ul {
 }
 
 .team_image > img:hover {
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.container_soft_purple {
+  background: #ae51d1;
+}
+
+.partner_container {
+  padding-bottom: 5%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.partner_members {
+  display: flex;
+  width: 100%;
+  margin: 0, auto;
+}
+
+.partner_members > li {
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  align-items: baseline;
+}
+
+.partner_members > li > div:last-child > h5 {
+  font-size: 22px;
+  font-style: italic;
+  font-family: "GmarketSansBold";
+}
+
+.partner_members > li > div:last-child > h6 {
+  margin-top: -15px;
+  font-size: 18px;
+}
+
+.partner_image > img {
+  border-radius: 0.5em;
+  margin-top: 5%;
+  width: 70%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.partner_image > img:hover {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
@@ -1805,6 +1854,14 @@ footer > div > div:first-child {
   .team_image > img {
     width: 75%;
   }
+  .partner_container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .partner_members {
+    flex-wrap: wrap;
+  }
 
   footer > div {
     position: relative;
@@ -1999,6 +2056,15 @@ footer > div > div:first-child {
   .team_members > li > div:last-child > h6 {
     font-size: 15px;
   }
+  .partner_container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .partner_members > li > div:last-child > h5 {
+    font-size: 18px;
+    font-family: "GmarketSansBold";
+  }
 
   footer > div {
     margin-left: 10%;
@@ -2062,6 +2128,10 @@ footer > div > div:first-child {
   }
 
   .team_container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .partner_container {
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -2151,6 +2221,9 @@ footer > div > div:first-child {
   .footer_contents > h6 {
     font-size: 15px;
     line-height: 25px;
+  }
+  .community_icons {
+    flex-wrap: wrap;
   }
 }
 
