@@ -203,6 +203,171 @@
   }
 }
 
+@keyframes mix_0 {
+  0% {
+    background-image: url(image/nft/mix/mix_cell_0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/mix/mix_sprout_0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/mix/mix_adult_0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/mix/mix_spawning_0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/mix/mix_cell_0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes mix_1 {
+  0% {
+    background-image: url(image/nft/mix/mix_cell_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/mix/mix_sprout_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/mix/mix_adult_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/mix/mix_spawning_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/mix/mix_cell_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes mix_2 {
+  0% {
+    background-image: url(image/nft/mix/mix_cell_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/mix/mix_sprout_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/mix/mix_adult_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/mix/mix_spawning_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/mix/mix_cell_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes mix_3 {
+  0% {
+    background-image: url(image/nft/mix/mix_cell_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/mix/mix_sprout_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/mix/mix_adult_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/mix/mix_spawning_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/mix/mix_cell_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@keyframes mix_4 {
+  0% {
+    background-image: url(image/nft/mix/mix_cell_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  25% {
+    background-image: url(image/nft/mix/mix_sprout_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  50% {
+    background-image: url(image/nft/mix/mix_adult_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  75% {
+    background-image: url(image/nft/mix/mix_spawning_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  100% {
+    background-image: url(image/nft/mix/mix_cell_4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
 @keyframes type_cell {
   0% {
     opacity: 1;
@@ -1001,9 +1166,59 @@ ul {
   animation: cactus 12s infinite;
 }
 
+.mix_0 {
+  width: 100%;
+  height: 192px;
+  background-image: url(image/nft/mix/mix_cell_0.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  animation: mix_0 12s infinite;
+}
+
+.mix_1 {
+  width: 100%;
+  height: 192px;
+  background-image: url(image/nft/mix/mix_cell_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: mix_1 12s infinite;
+}
+
+.mix_2 {
+  width: 100%;
+  height: 192px;
+  background-image: url(image/nft/mix/mix_cell_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: mix_2 12s infinite;
+}
+
+.mix_3 {
+  width: 100%;
+  height: 192px;
+  background-image: url(image/nft/mix/mix_cell_3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: mix_3 12s infinite;
+}
+
+.mix_4 {
+  width: 100%;
+  height: 192px;
+  background-image: url(image/nft/mix/mix_cell_4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  animation: mix_4 12s infinite;
+}
+
 .type_level {
   position: relative;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
 }
 
 .type_level > h2 {
@@ -1033,8 +1248,14 @@ ul {
   animation: type_spawning 12s infinite;
 }
 
+.nft_link {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
 .minting {
-  position: absolute;
   color: #fff;
   background: #a100a3;
   border-radius: 0.5em;
@@ -1044,8 +1265,6 @@ ul {
   font-style: italic;
   font-family: "GmarketSansBold";
   width: 40%;
-  bottom: -50%;
-  left: 29%;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s;
@@ -1058,7 +1277,6 @@ ul {
 }
 
 .pdf {
-  position: absolute;
   color: #fff;
   background: #a100a3;
   border-radius: 0.5em;
@@ -1068,8 +1286,6 @@ ul {
   font-style: italic;
   font-family: "GmarketSansBold";
   width: 40%;
-  bottom: -30%;
-  left: 29%;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s;
@@ -1757,6 +1973,10 @@ footer > div > div:first-child {
     display: none;
   }
 
+  .pdf {
+    display: none;
+  }
+
   .roadmap_contents {
     margin-top: -20%;
     margin-left: 10%;
@@ -1993,13 +2213,11 @@ footer > div > div:first-child {
   }
 
   .minting {
-    font-size: 18px;
-    bottom: -30%;
+    font-size: 16px;
   }
 
   .pdf {
-    font-size: 18px;
-    bottom: -20%;
+    font-size: 16px;
   }
 
   .faq_container {
@@ -2170,7 +2388,11 @@ footer > div > div:first-child {
   }
 
   .minting {
-    font-size: 18px;
+    font-size: 14px;
+  }
+
+  .pdf {
+    font-size: 14px;
   }
 
   .faq_01 > li > h2,
