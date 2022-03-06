@@ -2041,6 +2041,7 @@ footer > div > div:first-child {
     margin-top: 0px;
     font-size: 26px;
   }
+
   .faq_01 > li > h3,
   .faq_02 > li > h3,
   .faq_03 > li > h3,
@@ -2402,10 +2403,10 @@ footer > div > div:first-child {
   }
 
   .minting {
-    font-size: 14px;
+    font-size: 16px;
   }
   .pdf {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .faq_01 > li > h2,
