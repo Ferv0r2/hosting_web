@@ -11,7 +11,8 @@
       href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet/less" href="style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
     <title>Kepler-452b</title>
     <script
       src="https://kit.fontawesome.com/83ccc8e33b.js"
@@ -73,6 +74,324 @@
         </div>
       </div>
 
+      <div id="modal_evol" class="modal">
+        <div class="modal_window">
+          <div class="title">
+            <p>Evolution & Proliferation</p>
+          </div>
+          <div class="contents_nft">
+            <div class="evol_info">
+              <p>Kepler-452b는 매일 끊임없이 진화하고 증식하는 NFT입니다.</p>
+              <p>
+                오프라인 날씨, 일정 기간 반감기를 통한 진화 확률의 +-가
+                존재합니다.
+              </p>
+            </div>
+            <img src="image/contents/evol/evol_system.png" />
+            <div class="evol_box">
+              <ul class="evol_cycle">
+                <li>
+                  <img src="image/contents/evol/cell.png" />
+                </li>
+                <li>
+                  <img src="image/contents/evol/sprout.png" />
+                </li>
+                <li>
+                  <img src="image/contents/evol/adult.png" />
+                </li>
+                <li>
+                  <img src="image/contents/evol/spawning.png" />
+                </li>
+              </ul>
+            </div>
+            <div class="proli">
+              <p>
+                NFT를 산란기까지 성장시킨 뒤에 진화를 하게되면 "증식"이
+                발생합니다.
+              </p>
+              <p>
+                증식을 통해 새로운 NFT를 끊임없이 획득하면서 흡사 NFT 채굴을
+                체험할 수 있습니다.
+              </p>
+            </div>
+            <p>자세한 사항은 "About" 탭에서 이어집니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal_potion" class="modal">
+        <div class="modal_window">
+          <div class="title">
+            <p>Potion</p>
+          </div>
+          <div class="contents_nft">
+            <div class="potion_info">
+              <p>
+                포션이란 소유한 메타세포의 성장 확률을 강화하는 기능의 NFT
+                입니다.
+              </p>
+              <p>즉, 메타세포의 기본 진화 확률을 높여후는 역할을 수행합니다.</p>
+            </div>
+            <img src="image/contents/potion/potion.png" />
+            <div class="potion_pre">
+              <p>1. 포션은 하나의 세포에 한 번만 사용 가능합니다.</p>
+              <p>2. 포션이 적용된 NFT의 마크는 영구적으로 사라지지 않습니다.</p>
+              <p>
+                3. 확률은 최초 10%일 경우, 소형 포션을 사용 시 13%, 중형 포션을
+                사용 시 15%, 대형 포션을 사용 시 20%입니다.
+              </p>
+            </div>
+            <div class="medium_info">
+              <p>
+                포션에 대한 자세한 내용은 다음 미디엄 링크를 참조하시기
+                바랍니다.
+              </p>
+            </div>
+            <div class="medium">
+              <a
+                href="https://bit.ly/3Hjbx6Z"
+                target="_blank"
+                class="btn_medium"
+                >Go to Medium</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal_mix" class="modal">
+        <div class="modal_window">
+          <div class="title">
+            <p>Mix</p>
+          </div>
+          <div class="contents_nft">
+            <div class="mix_info">
+              <p>
+                "믹스" 컨텐츠는 믹스스톤과 2개의 식물 NFT를 합성하면서 새로운
+                "종"을 얻을 수 있는 컨텐츠입니다.
+              </p>
+              <p>각 종의 믹스는 조합식이 정해져있으며, 다음 공식과 같습니다.</p>
+            </div>
+            <div class="mix_table">
+              <div class="mix">
+                <ul class="mix_box">
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mixStoneA.png" />
+                    </div>
+                    <h5>MixStone A</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type1.png" />
+                    </div>
+                    <h5>Fatsia Japoeye</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type2.png" />
+                    </div>
+                    <h5>Tridacna Rosa</h5>
+                  </li>
+                  <p>=</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mix1.png" />
+                    </div>
+                    <h5>S. Mushroom</h5>
+                  </li>
+                </ul>
+                <ul class="mix_box">
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mixStoneB.png" />
+                    </div>
+                    <h5>MixStone B</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type2.png" />
+                    </div>
+                    <h5>Tridacna Rosa</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type3.png" />
+                    </div>
+                    <h5>Pisum Helianthus</h5>
+                  </li>
+                  <p>=</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mix2.png" />
+                    </div>
+                    <h5>S. Morning Glory</h5>
+                  </li>
+                </ul>
+                <ul class="mix_box">
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mixStoneC.png" />
+                    </div>
+                    <h5>MixStone C</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type3.png" />
+                    </div>
+                    <h5>Pisum Helianthus</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type4.png" />
+                    </div>
+                    <h5>S. Nepenthe</h5>
+                  </li>
+                  <p>=</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mix3.png" />
+                    </div>
+                    <h5>S. Strawberry</h5>
+                  </li>
+                </ul>
+                <ul class="mix_box">
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mixStoneD.png" />
+                    </div>
+                    <h5>MixStone D</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type4.png" />
+                    </div>
+                    <h5>S. Nepenthe</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type5.png" />
+                    </div>
+                    <h5>S. Cactus</h5>
+                  </li>
+                  <p>=</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mix4.png" />
+                    </div>
+                    <h5>S. Carrot</h5>
+                  </li>
+                </ul>
+                <ul class="mix_box">
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mixStoneE.png" />
+                    </div>
+                    <h5>MixStone E</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type5.png" />
+                    </div>
+                    <h5>S. Cactus</h5>
+                  </li>
+                  <p>+</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/type1.png" />
+                    </div>
+                    <h5>Fatsia Japoeye</h5>
+                  </li>
+                  <p>=</p>
+                  <li>
+                    <div class="mix_image">
+                      <img src="image/contents/mix/mix5.png" />
+                    </div>
+                    <h5>S. Corn</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="medium_info">
+              <p>
+                믹스에 대한 자세한 내용은 다음 미디엄 링크를 참조하시기
+                바랍니다.
+              </p>
+            </div>
+            <div class="medium">
+              <a
+                href="https://bit.ly/3t2kTPM"
+                target="_blank"
+                class="btn_medium"
+                >Go to Medium</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contents_container">
+        <div class="contents_header">
+          <h1>Contents</h1>
+          <h2>Click on the contents</h2>
+        </div>
+        <ul class="contents_list">
+          <li>
+            <div id="btn_modal_evol" class="btn_modal">
+              <img
+                src="image/contents/evol/banner_evol.png"
+                hspace="20;"
+                title="Click Me"
+              />
+            </div>
+            <h5>
+              Evolution <br />
+              & Proliferation
+            </h5>
+          </li>
+          <li>
+            <div id="btn_modal_potion" class="btn_modal">
+              <img
+                src="image/contents/potion/banner_potion.png"
+                hspace="20;"
+                title="Click Me"
+              />
+            </div>
+            <h5>Potion</h5>
+          </li>
+          <li>
+            <div id="btn_modal_mix" class="btn_modal">
+              <img
+                src="image/contents/mix/banner_mix.png"
+                hspace="20;"
+                title="Click Me"
+              />
+            </div>
+            <h5>Mix</h5>
+          </li>
+          <li>
+            <div class="btn_modal">
+              <img
+                src="image/contents/mining/banner_mining.png"
+                hspace="20;"
+                onclick="alert('Comming Soon!')"
+              />
+            </div>
+            <h5>Mining</h5>
+          </li>
+        </ul>
+      </div>
+
       <div class="container">
         <div class="story_container" id="link_story">
           <div class="contents_header">
@@ -87,11 +406,18 @@
               >story hide</a
             >
             <div class="story_contents">
-              <img src="image/story/story.png" />
+              <div>
+                <h2>1화</h2>
+                <img src="image/story/story.png" />
+              </div>
               <h2>
                 지구를 정화하는 메타세포와 함께하는 <br />
                 여러분들만의 이야기를 보여주세요!
               </h2>
+              <div>
+                <h2>2화</h2>
+                <img src="image/story/story_2.png" />
+              </div>
             </div>
           </div>
           <div class="fade"></div>
