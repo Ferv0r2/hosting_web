@@ -5,9 +5,12 @@ const lang = document.querySelector(".lang");
 const modal_evol = document.querySelector("#modal_evol");
 const modal_potion = document.querySelector("#modal_potion");
 const modal_mix = document.querySelector("#modal_mix");
+const modal_mining = document.querySelector("#modal_mining");
+
 const modal_evol_active = document.querySelector("#btn_modal_evol");
 const modal_potion_active = document.querySelector("#btn_modal_potion");
 const modal_mix_active = document.querySelector("#btn_modal_mix");
+const modal_mining_active = document.querySelector("#btn_modal_mining");
 
 const faq_01_btn = document.querySelector(".faq_01_btn");
 const faq_02_btn = document.querySelector(".faq_02_btn");
@@ -59,6 +62,19 @@ modal_mix_active.addEventListener("click", () => {
   modal_mix.style.display = "block";
 });
 
+// Modal Mining
+modal_mining.addEventListener("click", (e) => {
+  const evTarget = e.target;
+  if (evTarget.classList.contains("modal")) {
+    modal_mining.style.display = "none";
+  }
+});
+
+modal_mining_active.addEventListener("click", () => {
+  modal_mining.style.display = "block";
+});
+
+// Modal Close
 window.addEventListener("keyup", (e) => {
   if (modal_evol.style.display === "block" && e.key === "Escape") {
     modal_evol.style.display = "none";
@@ -66,6 +82,8 @@ window.addEventListener("keyup", (e) => {
     modal_potion.style.display = "none";
   } else if (modal_mix.style.display === "block" && e.key === "Escape") {
     modal_mix.style.display = "none";
+  } else if (modal_mining.style.display === "block" && e.key === "Escape") {
+    modal_mining.style.display = "none";
   }
 });
 
